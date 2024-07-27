@@ -216,6 +216,14 @@ main {
     align-items: center;
 }
 
+.question {
+    padding-bottom: 3px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #question-btn {
     cursor: pointer;
     position: absolute;
@@ -249,13 +257,18 @@ main {
     color: white;
     font-weight: 400;
     font-size: 1.2rem;
-    width: 1069.92px;
+    width: 70%;
     padding: 15px 80px;
-    position: relative;
-    top: -75px;
-    transition: top 0.5s;
+    transition: margin 0.5s;
 }
 
-.show-answer {
-    top: 0px;
+
+
+footer {
+    background-color: #a3a3a3;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
 }
