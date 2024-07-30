@@ -1,5 +1,7 @@
 (function(){
     const questions = document.getElementsByClassName("question-card")
+    const sendBtn = document.getElementById("send-btn")
+
     Array.from(questions).forEach((el) => {
         let answerMargin
         el.addEventListener("click", () => {
@@ -11,5 +13,9 @@
                 answer.style.marginTop = answerMargin
             }
         })
+    })
+
+    sendBtn.addEventListener("click", (e) => {
+        e.preventDefault()
     })
 })()
