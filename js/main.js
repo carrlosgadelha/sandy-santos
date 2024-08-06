@@ -1,6 +1,8 @@
 (function(){
     const questions = document.getElementsByClassName("question-card")
     const sendBtn = document.getElementById("send-btn")
+    const agendarBtn = document.getElementById("agendarBtn")
+    const modal = document.querySelector("#agendarPopup")
 
     Array.from(questions).forEach((el) => {
         let answerMargin
@@ -13,6 +15,10 @@
                 answer.style.marginTop = answerMargin
             }
         })
+    })
+
+    agendarBtn.addEventListener("click", () => {
+        modal.showModal()
     })
 
     sendBtn.addEventListener("click", (e) => {

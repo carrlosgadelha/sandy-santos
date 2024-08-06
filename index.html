@@ -15,11 +15,31 @@
                 <li><a href="#servicos">SERVIÇOS</a></li>
                 <li><a href="#photos">FOTOS</a></li>
                 <li><a href="#contato">CONTATO</a></li>
-                <li><button class="btn-default">AGENDAR</button></li>
+                <li><button id="agendarBtn" class="btn-default">AGENDAR</button></li>
             </ul>
         </nav>
         <h2 class="home-text"><span id="elegancia">Elegância</span><br><span id="arte">Arte</span> em<br><span id="cadapincelada">cada <span id="pincel">pincelada</span></span></h2>
     </header>
+    <dialog id="agendarPopup">
+        <div class="modal-style">
+            <h2>Agendar Horário</h2>
+            <label for="modal-name">Nome</label>
+            <input type="text" id="modal-name">
+            <label for="day">Dia:</label>
+            <input type="range" name="day" id="day" min="1" max="31" step="1">
+            <label for="hour">Horário:</label>
+            <div class="options">
+                <input type="radio" value="08:00" name="horario" id="eigth">
+                <label for="eigth">08:00h</label>
+                <input type="radio" value="09:00" name="horario" id="nine">
+                <label for="nine">09:00h</label>
+                <input type="radio" value="10:00" name="horario" id="ten">
+                <label for="ten">10:00h</label>
+                <input type="radio" value="11:00" name="horario" id="eleven">
+                <label for="eleven">11:00h</label>
+            </div>
+        </div>
+    </dialog>
     <main>
         <section id="servicos">
             <div class="servicos-img">

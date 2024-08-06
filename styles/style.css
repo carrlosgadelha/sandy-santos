@@ -1,5 +1,7 @@
 :root{
     --pink:#e3007b;
+    --modalW: 920px;
+    --modalH: 200px;
 }
 
 * {
@@ -321,4 +323,47 @@ footer {
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+}
+
+.modal-style {
+    background-color: #e3007b;
+    border-radius: 1.5rem;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    width: var(--modalW);
+    height: var(--modalH);
+}
+
+.modal-style > h2 {
+    font-size: 2rem;
+    justify-self:normal;
+}
+
+#agendarPopup::backdrop{
+    background-color: rgb(0, 0, 0, .5);
+}
+
+#agendarPopup {
+    background-color: transparent;
+    top: calc(50% - (var(--modalH) / 2));
+    left: calc(50% - (var(--modalW) / 2));
+}
+
+#modal-name {
+    width: 70%;
+    font-size: 1.3rem;
+    margin: 10px 0px;
+}
+
+.options > input {
+    cursor: pointer;
+}
+
+.options > label {
+    cursor: pointer;
 }
