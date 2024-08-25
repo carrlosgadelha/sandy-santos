@@ -1,0 +1,9 @@
+{
+  "main": "./js/main.js",
+  "devDependencies": {
+    "cypress": "^13.13.3"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.14"
+  }
+}
